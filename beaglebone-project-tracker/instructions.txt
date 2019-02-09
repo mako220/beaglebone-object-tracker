@@ -1,0 +1,9 @@
+Open terminal
+
+$ chmod +x opencv.sh
+$ ./opencv.sh
+
+
+For compiling in C++ :
+$ g++ -ggdb `pkg-config --cflags opencv` -o `basename opencvtest.cpp .cpp` opencvtest.cpp `pkg-config --libs opencv`
+$ ./opencvtest
